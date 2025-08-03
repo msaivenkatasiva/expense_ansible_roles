@@ -41,6 +41,7 @@
   ansible.builtin.template:
     src: backend.service.j2
     dest: /etc/systemd/system/backend.service
+    remote_src: yes
 
 - name: download python dependencies for mysql
   ansible.builtin.pip:
