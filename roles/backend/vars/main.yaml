@@ -1,0 +1,4 @@
+login_host: db.devopswithmsvs.uno
+login_password: Expense@1
+DB_HOST: db.devopswithmsvs.uno
+login_user: root
