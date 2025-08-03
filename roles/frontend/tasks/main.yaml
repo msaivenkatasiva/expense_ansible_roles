@@ -27,7 +27,7 @@
 
 - name: copy frontend conf file
   ansible.builtin.template:
-    src: frontend.conf.j2
+    src: expense.conf.j2
     dest: /etc/nginx/default.d/expense.conf
   notify:
   - restart nginx
