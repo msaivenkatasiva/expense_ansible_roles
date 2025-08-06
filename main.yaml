@@ -1,7 +1,7 @@
-- name: configure "{{ component }}"
-  hosts: "{{ component }}"
-  become: yes
-  vars:
-    component: { "db", "backend", "frontend" }
-  roles:
-  - "{{ component }}"
+# - name: configure "{{ component }}"
+#   hosts: "{{ component }}"
+#   become: yes
+#   vars:
+#     component: ["db", "backend", "frontend"]
+#   roles:
+#   - "{{ component }}"
