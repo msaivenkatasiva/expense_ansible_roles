@@ -2,9 +2,6 @@
   hosts: "{{ component }}"
   become: yes
   vars:
-    component:
-    - frontend
-    - backend
-    - db
+    component: { "db", "backend", "frontend" }
   roles:
   - "{{ component }}"
