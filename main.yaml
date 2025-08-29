@@ -1,7 +1,17 @@
-# - name: configure "{{ component }}"
-#   hosts: "{{ component }}"
-#   become: yes
-#   vars:
-#     component: ["db", "backend", "frontend"]
-#   roles:
-#   - "{{ component }}"
+- name: "configure {{ component }} server"
+  hosts: "{{ component }}"
+  become: yes
+  roles:
+  - "{{ component }}"
+
+  # - name: Configure components
+  #   hosts: "{{ item }}"
+  #   become: yes
+  #   vars:
+  #     components:
+  #       - db
+  #       - backend
+  #       - frontend
+  #   roles:
+  #     - "{{ item }}"
+  #   loop: "{{ components }}"
